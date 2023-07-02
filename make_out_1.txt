@@ -1,0 +1,169 @@
+if ! [ -e /home/jyothis/jyothis/software/class_sz/build ]; then mkdir /home/jyothis/jyothis/software/class_sz/build ; mkdir /home/jyothis/jyothis/software/class_sz/build/lib; fi;
+touch build/.base
+if ! [ -e /home/jyothis/jyothis/software/class_sz/output ]; then mkdir /home/jyothis/jyothis/software/class_sz/output ; fi;
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/growTable.c -o growTable.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/dei_rkck.c -o dei_rkck.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/sparse.c -o sparse.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/evolver_rkck.c -o evolver_rkck.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/evolver_ndf15.c -o evolver_ndf15.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/arrays.c -o arrays.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/parser.c -o parser.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/quadrature.c -o quadrature.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/hyperspherical.c -o hyperspherical.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/common.c -o common.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/trigonometric_integrals.c -o trigonometric_integrals.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/r8lib.c -o r8lib.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/class_sz_tools.c -o class_sz_tools.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/Patterson.c -o Patterson.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../tools/fft.c -o fft.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../source/input.c -o input.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../source/background.c -o background.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../source/thermodynamics.c -o thermodynamics.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../source/perturbations.c -o perturbations.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../source/primordial.c -o primordial.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../source/nonlinear.c -o nonlinear.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../source/transfer.c -o transfer.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../source/spectra.c -o spectra.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../source/lensing.c -o lensing.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../source/class_sz.c -o class_sz.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../source/class_sz_clustercounts.c -o class_sz_clustercounts.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../hyrec/hyrectools.c -o hyrectools.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../hyrec/helium.c -o helium.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../hyrec/hydrogen.c -o hydrogen.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../hyrec/history.c -o history.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../source/output.c -o output.o
+cd /home/jyothis/jyothis/software/class_sz/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/home/jyothis/jyothis/software/class_sz"' -DHYREC -I../include -I/usr/local/include/ -I/usr/include/ -I/home/jyothis/.pyenv/versions/class-sz/include -I../hyrec -c ../main/class_sz_driver.c -o class_sz_driver.o
+#gcc -O4 -ffast-math  -fopenmp -g -fPIC -g -o class build/growTable.o build/dei_rkck.o build/sparse.o build/evolver_rkck.o build/evolver_ndf15.o build/arrays.o build/parser.o build/quadrature.o build/hyperspherical.o build/common.o build/trigonometric_integrals.o build/r8lib.o build/class_sz_tools.o build/Patterson.o build/fft.o build/input.o build/background.o build/thermodynamics.o build/perturbations.o build/primordial.o build/nonlinear.o build/transfer.o build/spectra.o build/lensing.o build/class_sz.o build/class_sz_clustercounts.o build/hyrectools.o build/helium.o build/hydrogen.o build/history.o build/output.o build/class_sz_driver.o -lm -L/home/runner/work/SOLikeT/SOLikeT/gsl-2.6/lib -lgsl -lgslcblas
+# gcc -O4 -ffast-math  -fopenmp -g -fPIC -g -o class build/growTable.o build/dei_rkck.o build/sparse.o build/evolver_rkck.o build/evolver_ndf15.o build/arrays.o build/parser.o build/quadrature.o build/hyperspherical.o build/common.o build/trigonometric_integrals.o build/r8lib.o build/class_sz_tools.o build/Patterson.o build/fft.o build/input.o build/background.o build/thermodynamics.o build/perturbations.o build/primordial.o build/nonlinear.o build/transfer.o build/spectra.o build/lensing.o build/class_sz.o build/class_sz_clustercounts.o build/hyrectools.o build/helium.o build/hydrogen.o build/history.o build/output.o build/class_sz_driver.o -L/usr/local/lib -L/Users/boris/miniconda/lib -lgsl -lgslcblas -lfftw3 -lm
+#gcc -O4 -ffast-math  -fopenmp -g -fPIC -g -o class_sz build/growTable.o build/dei_rkck.o build/sparse.o build/evolver_rkck.o build/evolver_ndf15.o build/arrays.o build/parser.o build/quadrature.o build/hyperspherical.o build/common.o build/trigonometric_integrals.o build/r8lib.o build/class_sz_tools.o build/Patterson.o build/fft.o build/input.o build/background.o build/thermodynamics.o build/perturbations.o build/primordial.o build/nonlinear.o build/transfer.o build/spectra.o build/lensing.o build/class_sz.o build/class_sz_clustercounts.o build/hyrectools.o build/helium.o build/hydrogen.o build/history.o build/output.o build/class_sz_driver.o -lgsl -lgslcblas -lfftw3 -lm -L/Users/boris/opt/miniconda3/lib
+gcc -O4 -ffast-math  -fopenmp -g -fPIC -g -o class_sz build/growTable.o build/dei_rkck.o build/sparse.o build/evolver_rkck.o build/evolver_ndf15.o build/arrays.o build/parser.o build/quadrature.o build/hyperspherical.o build/common.o build/trigonometric_integrals.o build/r8lib.o build/class_sz_tools.o build/Patterson.o build/fft.o build/input.o build/background.o build/thermodynamics.o build/perturbations.o build/primordial.o build/nonlinear.o build/transfer.o build/spectra.o build/lensing.o build/class_sz.o build/class_sz_clustercounts.o build/hyrectools.o build/helium.o build/hydrogen.o build/history.o build/output.o build/class_sz_driver.o -lgsl -lgslcblas -lfftw3 -lm -L/home/jyothis/.pyenv/versions/class-sz/lib
+# gcc -O4 -ffast-math  -fopenmp -g -fPIC -g -o class build/growTable.o build/dei_rkck.o build/sparse.o build/evolver_rkck.o build/evolver_ndf15.o build/arrays.o build/parser.o build/quadrature.o build/hyperspherical.o build/common.o build/trigonometric_integrals.o build/r8lib.o build/class_sz_tools.o build/Patterson.o build/fft.o build/input.o build/background.o build/thermodynamics.o build/perturbations.o build/primordial.o build/nonlinear.o build/transfer.o build/spectra.o build/lensing.o build/class_sz.o build/class_sz_clustercounts.o build/hyrectools.o build/helium.o build/hydrogen.o build/history.o build/output.o build/class_sz_driver.o -L/usr/local/lib -L/Users/boris/opt/anaconda3/lib -L/opt/homebrew/lib -lgsl -lgslcblas -lfftw3 -lm
+# gcc -O4 -ffast-math  -fopenmp -g -fPIC -g -o class build/growTable.o build/dei_rkck.o build/sparse.o build/evolver_rkck.o build/evolver_ndf15.o build/arrays.o build/parser.o build/quadrature.o build/hyperspherical.o build/common.o build/trigonometric_integrals.o build/r8lib.o build/class_sz_tools.o build/Patterson.o build/fft.o build/input.o build/background.o build/thermodynamics.o build/perturbations.o build/primordial.o build/nonlinear.o build/transfer.o build/spectra.o build/lensing.o build/class_sz.o build/class_sz_clustercounts.o build/hyrectools.o build/helium.o build/hydrogen.o build/history.o build/output.o build/class_sz_driver.o -L/usr/local/lib -lgsl -lgslcblas -lm
+ar rv  libclass.a build/growTable.o build/dei_rkck.o build/sparse.o build/evolver_rkck.o build/evolver_ndf15.o build/arrays.o build/parser.o build/quadrature.o build/hyperspherical.o build/common.o build/trigonometric_integrals.o build/r8lib.o build/class_sz_tools.o build/Patterson.o build/fft.o build/input.o build/background.o build/thermodynamics.o build/perturbations.o build/primordial.o build/nonlinear.o build/transfer.o build/spectra.o build/lensing.o build/class_sz.o build/class_sz_clustercounts.o build/hyrectools.o build/helium.o build/hydrogen.o build/history.o
+a - build/growTable.o
+a - build/dei_rkck.o
+a - build/sparse.o
+a - build/evolver_rkck.o
+a - build/evolver_ndf15.o
+a - build/arrays.o
+a - build/parser.o
+a - build/quadrature.o
+a - build/hyperspherical.o
+a - build/common.o
+a - build/trigonometric_integrals.o
+a - build/r8lib.o
+a - build/class_sz_tools.o
+a - build/Patterson.o
+a - build/fft.o
+a - build/input.o
+a - build/background.o
+a - build/thermodynamics.o
+a - build/perturbations.o
+a - build/primordial.o
+a - build/nonlinear.o
+a - build/transfer.o
+a - build/spectra.o
+a - build/lensing.o
+a - build/class_sz.o
+a - build/class_sz_clustercounts.o
+a - build/hyrectools.o
+a - build/helium.o
+a - build/hydrogen.o
+a - build/history.o
+cp python/setup.py python/autosetup.py
+cd python; export CC=gcc; /home/jyothis/.pyenv/versions/class-sz/bin/python autosetup.py install || /home/jyothis/.pyenv/versions/class-sz/bin/python autosetup.py install --user
+running install
+running build
+running build_ext
+cythoning /home/jyothis/jyothis/software/class_sz/python/../python/classy.pyx to /home/jyothis/jyothis/software/class_sz/python/../python/classy.c
+building 'classy_sz' extension
+creating build
+creating build/temp.linux-x86_64-3.10
+creating build/temp.linux-x86_64-3.10/home
+creating build/temp.linux-x86_64-3.10/home/jyothis
+creating build/temp.linux-x86_64-3.10/home/jyothis/jyothis
+creating build/temp.linux-x86_64-3.10/home/jyothis/jyothis/software
+creating build/temp.linux-x86_64-3.10/home/jyothis/jyothis/software/class_sz
+creating build/temp.linux-x86_64-3.10/home/jyothis/jyothis/software/class_sz/python
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/home/jyothis/.pyenv/versions/class-sz/lib/python3.10/site-packages/numpy/core/include -I/home/jyothis/jyothis/software/class_sz/python/../include -I/home/jyothis/.pyenv/versions/class-sz/include -I/home/jyothis/.pyenv/versions/3.10.5/include/python3.10 -c /home/jyothis/jyothis/software/class_sz/python/../python/classy.c -o build/temp.linux-x86_64-3.10/home/jyothis/jyothis/software/class_sz/python/../python/classy.o
+creating build/lib.linux-x86_64-3.10
+gcc -shared -L/home/jyothis/.pyenv/versions/3.10.5/lib -Wl,-rpath,/home/jyothis/.pyenv/versions/3.10.5/lib -L/home/jyothis/.pyenv/versions/3.10.5/lib -Wl,-rpath,/home/jyothis/.pyenv/versions/3.10.5/lib build/temp.linux-x86_64-3.10/home/jyothis/jyothis/software/class_sz/python/../python/classy.o -L/home/jyothis/jyothis/software/class_sz/python/.. -L/usr/lib/gcc/x86_64-redhat-linux/12 -L/home/jyothis/.pyenv/versions/3.10.5/lib -lclass -lmvec -lm -o build/lib.linux-x86_64-3.10/classy_sz.cpython-310-x86_64-linux-gnu.so -lomp -L//home/jyothis/.pyenv/versions/class-sz/lib -lgsl -lfftw3 -lgslcblas
+running install_lib
+copying build/lib.linux-x86_64-3.10/classy_sz.cpython-310-x86_64-linux-gnu.so -> /home/jyothis/.pyenv/versions/class-sz/lib/python3.10/site-packages
+running install_egg_info
+Writing /home/jyothis/.pyenv/versions/class-sz/lib/python3.10/site-packages/classy_sz-2.9.4-py3.10.egg-info
+rm python/autosetup.py
+
+
+
+
+In file included from ../include/output.h:6,
+                 from ../source/output.c:16:
+../source/output.c: In function ‘output_tk’:
+../source/output.c:961:18: warning: ‘perturb_output_firstline_and_ic_suffix’ accessing 256 bytes in a region of size 4 [-Wstringop-overflow=]
+  961 |       class_call(perturb_output_firstline_and_ic_suffix(ppt, index_ic, first_line, ic_suffix),
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/common.h:98:7: note: in definition of macro ‘class_call_except’
+   98 |   if (function == _FAILURE_) {                                                                                   \
+      |       ^~~~~~~~
+../source/output.c:961:7: note: in expansion of macro ‘class_call’
+  961 |       class_call(perturb_output_firstline_and_ic_suffix(ppt, index_ic, first_line, ic_suffix),
+      |       ^~~~~~~~~~
+../source/output.c:961:18: note: referencing argument 4 of type ‘char[256]’
+  961 |       class_call(perturb_output_firstline_and_ic_suffix(ppt, index_ic, first_line, ic_suffix),
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/common.h:98:7: note: in definition of macro ‘class_call_except’
+   98 |   if (function == _FAILURE_) {                                                                                   \
+      |       ^~~~~~~~
+../source/output.c:961:7: note: in expansion of macro ‘class_call’
+  961 |       class_call(perturb_output_firstline_and_ic_suffix(ppt, index_ic, first_line, ic_suffix),
+      |       ^~~~~~~~~~
+In file included from ../include/primordial.h:6,
+                 from ../include/nonlinear.h:3,
+                 from ../include/transfer.h:6,
+                 from ../include/spectra.h:6,
+                 from ../include/lensing.h:6,
+                 from ../include/output.h:7:
+../include/perturbations.h:694:7: note: in a call to function ‘perturb_output_firstline_and_ic_suffix’
+  694 |   int perturb_output_firstline_and_ic_suffix(
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ar: creating libclass.a
+/home/jyothis/jyothis/software/class_sz/python/autosetup.py:1: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.core import setup
+warning: classy.pyx:118:10: cpdef variables will not be supported in Cython 3; currently they are no different from cdef variables
+warning: classy.pyx:119:10: cpdef variables will not be supported in Cython 3; currently they are no different from cdef variables
+warning: classy.pyx:120:10: cpdef variables will not be supported in Cython 3; currently they are no different from cdef variables
+warning: classy.pyx:121:10: cpdef variables will not be supported in Cython 3; currently they are no different from cdef variables
+warning: classy.pyx:126:10: cpdef variables will not be supported in Cython 3; currently they are no different from cdef variables
+warning: classy.pyx:127:10: cpdef variables will not be supported in Cython 3; currently they are no different from cdef variables
+warning: classy.pyx:158:14: cpdef variables will not be supported in Cython 3; currently they are no different from cdef variables
+warning: classy.pyx:439:78: local variable 'errmsg' referenced before assignment
+warning: classy.pyx:440:39: local variable 'errmsg' referenced before assignment
+In file included from /home/jyothis/.pyenv/versions/class-sz/lib/python3.10/site-packages/numpy/core/include/numpy/ndarraytypes.h:1948,
+                 from /home/jyothis/.pyenv/versions/class-sz/lib/python3.10/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                 from /home/jyothis/.pyenv/versions/class-sz/lib/python3.10/site-packages/numpy/core/include/numpy/arrayobject.h:5,
+                 from /home/jyothis/jyothis/software/class_sz/python/../python/classy.c:750:
+/home/jyothis/.pyenv/versions/class-sz/lib/python3.10/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+   17 | #warning "Using deprecated NumPy API, disable it with " \
+      |  ^~~~~~~
+/home/jyothis/jyothis/software/class_sz/python/../python/classy.c: In function ‘__pyx_pf_9classy_sz_5Class_446get_transfer’:
+/home/jyothis/jyothis/software/class_sz/python/../python/classy.c:61723:19: warning: ‘perturb_output_firstline_and_ic_suffix’ accessing 8192 bytes in a region of size 1024 [-Wstringop-overflow=]
+61723 |     __pyx_t_1 = ((perturb_output_firstline_and_ic_suffix((&__pyx_v_self->pt), __pyx_t_4, __pyx_v_ic_info, __pyx_v_ic_suffix) == _FAILURE_) != 0);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/jyothis/jyothis/software/class_sz/python/../python/classy.c:61723:19: note: referencing argument 3 of type ‘char[8192]’
+/home/jyothis/jyothis/software/class_sz/python/../python/classy.c:61723:19: note: referencing argument 4 of type ‘char[256]’
+In file included from /home/jyothis/jyothis/software/class_sz/python/../include/input.h:11,
+                 from /home/jyothis/jyothis/software/class_sz/python/../include/class.h:23,
+                 from /home/jyothis/jyothis/software/class_sz/python/../python/classy.c:759:
+/home/jyothis/jyothis/software/class_sz/python/../include/perturbations.h:694:7: note: in a call to function ‘perturb_output_firstline_and_ic_suffix’
+  694 |   int perturb_output_firstline_and_ic_suffix(
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘__pyx_pf_9classy_sz_5Class_434szcounts_ntot_rates_loglike’,
+    inlined from ‘__pyx_pw_9classy_sz_5Class_435szcounts_ntot_rates_loglike’ at /home/jyothis/jyothis/software/class_sz/python/../python/classy.c:57846:13:
+/home/jyothis/jyothis/software/class_sz/python/../python/classy.c:57973:15: warning: ‘__pyx_v_q_max’ may be used uninitialized [-Wmaybe-uninitialized]
+57973 |   __pyx_t_7 = PyFloat_FromDouble(__pyx_v_q_max); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 3488, __pyx_L1_error)
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/jyothis/jyothis/software/class_sz/python/../python/classy.c: In function ‘__pyx_pw_9classy_sz_5Class_435szcounts_ntot_rates_loglike’:
+/home/jyothis/jyothis/software/class_sz/python/../python/classy.c:57858:10: note: ‘__pyx_v_q_max’ was declared here
+57858 |   double __pyx_v_q_max;
+      |          ^~~~~~~~~~~~~

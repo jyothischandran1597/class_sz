@@ -1,0 +1,113 @@
+  989  export PYTHONPATH="/home/jyothis/.pyenv/versions/class_sz/bin/python"
+  990  make clean
+  991  make
+  992  make clean
+  993  sudo make
+  994  mount_altamira 
+  995  cp /mnt/altamira/output/CILC* jyothis/phd/work/output/NILC_planck_sims_pol/run5_T_and_E_combined_corrected_gal_residual/
+  996  altamira_login 
+  997  altamira_login 
+  998  sudo umount /mnt/altamira/
+  999  mount_altamira 
+ 1000  sudo umount /mnt/altamira/
+ 1001  altamira_login 
+ 1002  cd jyothis/software/class_sz/
+ 1003  python
+ 1004  ./class_sz explanatory.ini
+ 1005  ll
+ 1006  make clean
+ 1007  sudo make clean
+ 1008  nano Makefile
+ 1009  echo $PYTHON
+ 1010  make
+ 1011  cd ..
+ 1012  sudo rm -rf class_sz
+ 1013  ll
+ 1014  git clone https://github.com/CLASS-SZ/class_sz.git
+ 1015  cd class_sz
+ 1016  pyenv local class_sz 
+ 1017  python3 -m pip uninstall cosmopower
+ 1018  python3 -m pip uninstall tensorflow
+ 1019  pyenv deactivate
+ 1020  source deactivate
+ 1021  pyenv
+ 1022  pyenv virtualenv-delete class_sz 
+ 1023  cd ..
+ 1024  pyenv virtualenv-delete class_sz 
+ 1025  sudo pyenv virtualenv-delete class_sz 
+ 1026  env PYENV_DEBUG=1 $SHELL
+ 1027  sudo pyenv virtualenv-delete class_sz 
+ 1028  pyenv virtualenv-delete class_sz 
+ 1029  pyenv virtualenv class-sz 3.10.5
+ 1030  sudo rm -rf /home/jyothis/.pyenv/versions/3.10.5/envs/class_sz
+ 1031  pyenv virtualenv 3.10.5 class-sz
+ 1032  cd class_sz
+ 1033  pyenv local class-sz 
+ 1034  python3 -m pip install numpy scipy matplotlib astropy healpy cython
+ 1035  python3 -m pip install --upgrade pip
+ 1036  python3 -m pip install tensorflow
+ 1037  which gsl
+ 1038  python3 -m pip install pyfftw3
+ 1039  dnf install fftw3
+ 1040  sudo dnf install fftw3
+ 1041  which fftw3
+ 1042  which fftw
+ 1043  sudo dnf install fftw-devel
+ 1044  sudo ldconfig -v | grep fftw3
+ 1045  sudo dnf list fftw
+ 1046  which fftw
+ 1047* sudo dnf install --uninstall fftw3
+ 1048  sudo dnf list installed | grep fftw
+ 1049  dpkg -l 'libfftw3*'
+ 1050  cd /usr/local/lib/
+ 1051  ll
+ 1052  dnf reinstall fftw3
+ 1053  sudo dnf reinstall fftw3
+ 1054  sudo dnf reinstall fftw-devel
+ 1055  which fftw3
+ 1056  which fftw
+ 1057  which gcc
+ 1058  gcc -V
+ 1059  gcc --version
+ 1060  which gcc-12
+ 1061  cd 
+ 1062  cd jyothis/software/class_sz
+ 1063  python3 -m pip install cosmopower
+ 1064  python3 -c 'import cosmopower as cp'
+ 1065  git clone https://github.com/cosmopower-organization/notebooks.git
+ 1066  cd notebooks/
+ 1067  mkdir cosmopower-organizations
+ 1068  rm cosmopower-organizations
+ 1069  rm -r cosmopower-organizations
+ 1070  mkdir cosmopower-organization
+ 1071  cd cosmopower-organization/
+ 1072  git clone https://github.com/cosmopower-organization/lcdm.git
+ 1073  git clone https://github.com/cosmopower-organization/mnu.git
+ 1074  git clone https://github.com/cosmopower-organization/neff.git
+ 1075  git clone https://github.com/cosmopower-organization/wcdm.git
+ 1076  python
+ 1077  python3 -m pip install PyQt5
+ 1078  dnf list installed | grep gsl-devel
+ 1079  which gsl
+ 1080  cd ..
+ 1081  sudo dnf install gsl-devel
+ 1082  sudo dnf install gsl
+ 1083  make clena
+ 1084  make clean
+ 1085  make > make_out.txt
+ 1086  make clean
+ 1087  make > make_out_1.txt
+ 1088  history 100 > cmd_history.txt
+ 1089  python
+ 1090  python3 -m pip install mcfit
+ 1091  cd python/classy_szfast/
+ 1092  python3 -m pip install -e .
+
+
+ (class-sz) [jyothis@fedora python]$ python
+Python 3.10.5 (main, Mar 13 2023, 11:29:54) [GCC 12.2.1 20221121 (Red Hat 12.2.1-4)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import classy_sz
+2023-07-02 22:47:05.215250: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+WARNING:tensorflow:Please fix your imports. Module tensorflow.python.training.tracking.data_structures has been moved to tensorflow.python.trackable.data_structures. The old module will be deleted in version 2.11.
+
